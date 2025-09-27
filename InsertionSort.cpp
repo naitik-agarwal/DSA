@@ -10,6 +10,9 @@ void InsertionSort(vector<int> &a){
                 swap(a[r],a[j]);
                 r=j;
             }
+            else{
+                break;
+            }
         }
         size++;
     }
