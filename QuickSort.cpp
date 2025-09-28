@@ -20,10 +20,10 @@ void quickSort(vector<int> &a,int low,int high){
             j--;
         }
     }
-    if(low<j){
+    if(low<j){ // because correct recursion ranges are Left half: [low...j]
         quickSort(a,low,j);
     }
-    if(i<high){
+    if(i<high){   // Right half : [i....high]
         quickSort(a,i,high);
     }
 }
