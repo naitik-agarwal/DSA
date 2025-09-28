@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void sorrt(vector<int> &a){
+void DutchNationalFlag(vector<int> &a){
     int low=0,mid=0,high=a.size()-1;
     while(mid<=high){
         if(a[mid]==0){
@@ -23,7 +23,7 @@ int main(){
     cin>>n;
     vector<int> a(n);
     for(int i=0;i<n;i++){cin>>a[i];}
-    sorrt(a);
+    DutchNationalFlag(a);
     for(int i=0;i<n;i++){cout<<a[i]<<" ";}
     return 0;
 }
