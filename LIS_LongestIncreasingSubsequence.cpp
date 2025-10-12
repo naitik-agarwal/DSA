@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 // This only calculates the length of the longest increasing subsequence
-
+// Give a good try, try to understand the core concept behind these algos and understand them crystal clear
 int lis(int ind,int prev_ind,vector<vector<int>> &dp,int n,vector<int> &a){ // O(n^2)
     if(ind==n){
         return 0;
