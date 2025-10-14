@@ -20,6 +20,7 @@ void PrintinSpiralOrder(vector<vector<int>> &grid){
         lasttoprow=i;
         j--;
         i++;
+        if(count==m*n){break;}
         // Go bottom
         while(i<lastbottomrow){
             cout<<grid[i][j]<<" ";
@@ -29,6 +30,8 @@ void PrintinSpiralOrder(vector<vector<int>> &grid){
         lastrightcol=j;
         i--;
         j--;
+        if(count==n*m){break;}
+        //go left
         while(j>lastleftcol){
             cout<<grid[i][j]<<" ";
             j--;
@@ -37,6 +40,8 @@ void PrintinSpiralOrder(vector<vector<int>> &grid){
         lastbottomrow=i;
         j++;
         i--;
+        if(count==m*n){break;}
+        //go up
         while(i>lasttoprow){
             cout<<grid[i][j]<<" ";
             i--;
