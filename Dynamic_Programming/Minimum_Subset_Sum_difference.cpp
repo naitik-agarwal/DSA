@@ -39,6 +39,7 @@ int func(vector<int> &a,int n,int sum){ // Main function (ans)
     return ans;
 }
 
+
 int main(){
     int n;
     cin>>n;
