@@ -16,7 +16,7 @@ void dfs(int u){
 }
 
 int main(){
-    int n=19; // 0-17 nodes
+    int n=19; // 0-18 nodes
     adj.resize(19);
     visited.assign(n,false);
     adj[0]={4,8,14,13};
