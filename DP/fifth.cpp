@@ -56,10 +56,10 @@ int LCSubstringTab(string a, string b) {
 }
 
 int main() {
-  string a = "abcdge", b = "abedg";
+  string a = "leetcode", b = "edocteel";
   cout << LCS(a, b, a.size(), b.size()) << endl;
   cout << LCS_tab(a, b) << endl;
-  cout << LCSubstring(a, b, a.size(), b.size()) << endl;
+  // cout << LCSubstring(a, b, a.size(), b.size()) << endl;
   cout << LCSubstringTab(a, b) << endl;
   return 0;
 }
